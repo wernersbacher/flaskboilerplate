@@ -22,11 +22,3 @@ class User(UserMixin, db.Model):
 @login.user_loader
 def load_user(id):
 	return User.query.get(int(id))
-
-class Garage(db.Model):
-	garage_id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-	user_id = db.Column(db.Integer)
-	car_id = db.Column(db.Integer)
-
-	def __repr__(self):
-		return '<userid={}, carid={}>'.format(self.user_id, self.car_id)
