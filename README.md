@@ -1,3 +1,13 @@
-This is a flask web app for game devlopement learning. It's..
+# Flask Boiler Plate with User Handling
 
-Coming soon™
+
+Don't forget to run
+```
+flask db init
+flask db migrate
+flask db update
+```
+to create the database.
+
+
+Build with the help of this tutorial https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-iv-database
